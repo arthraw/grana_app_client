@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { AuthService } from '../../services/auth_service';
+import { AuthService } from '../../services/auth.service';
 import { toast } from 'ngx-sonner';
 import { Router, RouterOutlet } from '@angular/router';
 
@@ -55,11 +55,11 @@ export class LoginComponent {
           description: 'Bem vindo de volta!',
           duration: 4000,
           onAutoClose: () => { 
-            this.router.navigate(['/dashboard']);
+            this.router.navigate(['/my/dashboard']);
           },
         });
         
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/my/dashboard']);
       },
       error: (error) => {
         this.errorMessage = 'Erro ao realizar login';
@@ -76,21 +76,6 @@ export class LoginComponent {
     });
   }
 
-
-  logOut() {
-    this.authService.logout().subscribe({
-      next: (response) => {
-        this.sucessMessage = 'Logout realizado com sucesso!';
-        this.errorMessage = '';
-        console.log('Response:', response);
-      },
-      error: (error) => {
-        this.errorMessage = 'Erro ao realizar logout';
-        this.sucessMessage = '';
-        console.error('Error:', error);
-      }
-    });
-  }
   togglePassword() {
     this.showPassword = !this.showPassword;
   }

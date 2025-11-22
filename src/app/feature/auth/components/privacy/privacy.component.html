@@ -1,0 +1,161 @@
+<div class="min-h-screen bg-linear-to-br from-primary/5 via-background to-primary/10">
+  <div class="container max-w-4xl py-12 px-4 mx-auto">
+    
+    <a
+      routerLink="/auth/login"
+      class="inline-flex items-center gap-2 mb-8 text-muted-foreground hover:text-foreground transition-colors"
+    >
+      <svg class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="font-semibold">Grana App</span>
+    </a>
+
+    <!-- Card Principal -->
+    <div class="card border-border/50 shadow-lg rounded-lg bg-card">
+      <div class="card-header p-6 pb-4">
+        <h1 class="text-3xl font-bold text-foreground">Política de Privacidade</h1>
+        <p class="text-muted-foreground mt-1">Última atualização: {{ lastUpdate }}</p>
+      </div>
+
+      <div class="card-content p-6 pt-0">
+        
+        <!-- Seção 1 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">1. Introdução</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            A sua privacidade é importante para nós. Esta Política de Privacidade explica como o Grana App coleta,
+            usa, divulga e protege suas informações pessoais quando você utiliza nosso serviço de planejamento
+            financeiro.
+          </p>
+        </section>
+
+        <!-- Seção 2 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">2. Informações que Coletamos</h2>
+          <p class="text-muted-foreground leading-relaxed mb-3">
+            Coletamos as seguintes informações quando você usa o Grana App:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+            <li>
+              <strong class="text-foreground">Informações de Conta:</strong> nome, e-mail, senha criptografada
+            </li>
+            <li>
+              <strong class="text-foreground">Dados Financeiros:</strong> planejamentos, receitas, despesas e
+              categorias que você registra
+            </li>
+            <li>
+              <strong class="text-foreground">Dados de Uso:</strong> informações sobre como você interage com o
+              aplicativo
+            </li>
+            <li>
+              <strong class="text-foreground">Informações do Dispositivo:</strong> tipo de dispositivo, sistema
+              operacional, navegador
+            </li>
+          </ul>
+        </section>
+
+        <!-- Seção 3 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">3. Como Usamos Suas Informações</h2>
+          <p class="text-muted-foreground leading-relaxed mb-3">Utilizamos suas informações para:</p>
+          <ul class="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+            <li>Fornecer e manter o serviço de planejamento financeiro</li>
+            <li>Processar suas transações e gerenciar seus planejamentos</li>
+            <li>Enviar notificações importantes sobre sua conta</li>
+            <li>Melhorar e personalizar sua experiência no aplicativo</li>
+            <li>Proteger contra uso fraudulento ou não autorizado</li>
+            <li>Cumprir obrigações legais e regulatórias</li>
+          </ul>
+        </section>
+
+        <!-- Seção 4 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">4. Compartilhamento de Informações</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros para fins de marketing.
+            Podemos compartilhar informações apenas nas seguintes situações: com provedores de serviços que nos
+            auxiliam na operação do aplicativo, quando exigido por lei, ou para proteger nossos direitos legais.
+          </p>
+        </section>
+
+        <!-- Seção 5 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">5. Segurança dos Dados</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações pessoais
+            contra acesso não autorizado, perda ou destruição. Isso inclui criptografia de dados em trânsito e em
+            repouso, controles de acesso rigorosos e monitoramento contínuo de segurança.
+          </p>
+        </section>
+
+        <!-- Seção 6 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">6. Seus Direitos (LGPD)</h2>
+          <p class="text-muted-foreground leading-relaxed mb-3">
+            De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+            <li>Confirmar a existência de tratamento de seus dados</li>
+            <li>Acessar seus dados pessoais</li>
+            <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
+            <li>Solicitar a anonimização, bloqueio ou eliminação de dados</li>
+            <li>Revogar o consentimento a qualquer momento</li>
+            <li>Solicitar a portabilidade de seus dados</li>
+          </ul>
+        </section>
+
+        <!-- Seção 7 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">7. Retenção de Dados</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Retemos suas informações pessoais pelo tempo necessário para cumprir as finalidades descritas nesta
+            política, a menos que um período de retenção mais longo seja exigido por lei. Você pode solicitar a
+            exclusão de sua conta e dados a qualquer momento.
+          </p>
+        </section>
+
+        <!-- Seção 8 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">8. Cookies e Tecnologias Similares</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Utilizamos cookies e tecnologias similares para melhorar sua experiência, analisar o uso do serviço e
+            personalizar conteúdo. Você pode controlar o uso de cookies através das configurações do seu navegador.
+          </p>
+        </section>
+
+        <!-- Seção 9 -->
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">9. Alterações nesta Política</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre mudanças
+            significativas através do aplicativo ou por e-mail. Recomendamos revisar esta política regularmente.
+          </p>
+        </section>
+
+        <!-- Seção 10 -->
+        <section>
+          <h2 class="text-2xl font-semibold mb-4 text-foreground">10. Contato</h2>
+          <p class="text-muted-foreground leading-relaxed">
+            Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privacidade, entre em contato
+            com nosso Encarregado de Proteção de Dados:
+          </p>
+          <p class="text-muted-foreground leading-relaxed mt-2">
+            E-mail: privacidade&#64;granaapp.com.br<br>
+          </p>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Link de volta -->
+    <div class="text-center mt-8">
+      <a routerLink="/auth/login" class="text-primary hover:underline">
+        Voltar para o login
+      </a>
+    </div>
+
+  </div>
+</div>

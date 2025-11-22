@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Response } from 'src/app/core/models/response/response.model';
 import { LoginUser } from 'src/app/core/models/auth/login.model';
-import { ResponseMessage } from 'src/app/core/models/response/response_message.model';
+import { ResponseMessage } from 'src/app/core/models/response/response-message.model';
 
 @Injectable({
   providedIn: 'root',
